@@ -75,4 +75,4 @@ final_data <- subset_data %>%
   group_by(subject, activity) %>%
   summarize_all(list(mean))
 
-write.table(final_data, "final_data.txt", sep = "\t")
+write.table(final_data, "final_data.txt", sep = "\t", row.name=FALSE)
